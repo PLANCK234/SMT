@@ -2,12 +2,10 @@ I learned a lot from my friend [Guojia Qi](https://github.com/yuan-qi5), I appre
 
 **标题**
 
-======
 
 # 一级
 ## 二级
 ### 三级 
-=====
 
 一个空格在 # 和标题之间进行分隔
 ======
@@ -22,6 +20,9 @@ I think I will have good luck in my research journey.
 I love you.
 I thinik I'll use it to format all of my documents from now on.
 
+I love you.  
+I thinik I'll use it to format all of my documents from now on.
+
 I really like using Markdown.<br>
 I find that our university support us to start doing our research at anytime.
 
@@ -30,7 +31,6 @@ I find that our university support us to start doing our research at anytime.
 结尾空格（通过两个或者多个空格进行 + 回车进行换行，或者结尾添加`<br>`
 > 我不知道 br 是什么的缩写唉
 
-=======
 粗体：通过在文本前后各添加两个 星号 ** 或者 两个下划线 __，推荐使用 星号 <br>
 **有什么办法能够** **快速打出`<br>`吗** __直接打好麻烦，practice makes perfect?__
 
@@ -92,5 +92,56 @@ example : <br>
     - indented item
 4. fourth item
 
+======
+要将单词或短语表示为**代码**，请将其包裹在反引号中 <br>
+example : <br>
+At the command prompt, type `nano`. <br>
 
+转义反引号 ：   <br>
+要表示为代码的单词或短语中包含一个或多个反引号，则可以通过将单词或短语包裹在双反引号中 <br>
+example :   <br>
+`` Use `code` in your Markdown file .``
+
+代码块 ： 要创建代码块，请将代码块的每一行缩进至少四个空格或一个制表符, 用三个反引号即可  
+example :  
+```python
+    print("hello world")   
+    print("world hello")
+```
+example :
+```C++
+    int a = 1
+```
+example :
+``` lean
+    example (l : ℝ) : Tendsto (fun n : ℕ => l) atTop (𝓝 l) := by
+      simpa using tendsto_const_nhds
+```
+> I don't know how to creat a lean4 code block.
+
+**分隔线**
+======
+要创建分割线，请在单独一行上使用三个或多个 *** , 破折号 --- ，或下划线 ___ ,并且不能包含其他内容。  
+为了兼容性，请在分割线前后均添加空白行。   
+
+---
+
+***
+
+___
+
+**链接**
+=====
+链接放在中括号内，链接地址放在后面的括号中，链接 title 可选<br> 
+超链接 Markdown 语法代码 : `[超链接显示名](超链接地址 '超链接 title')`   
+example :   
+这是一个链接 [Markdown 语法](https://markdown.com.cn 'Markdown 教程')  
+
+带格式化的链接    
+**强调**链接 ： 在链接的语法前后增加星号    
+要将链接表示为**代码**，在方括号`内`添加反引号    
+example :
+Here is my friend: [yuan-qi5](https://github.com/yuan-qi5 'You can also be my friend!!')  
+I love deepseek **[deepseek](https://chat.deepseek.com/ 'deepseek 官网')**    
+This is the gpt [`gpt`](https://chatgpt.com/ 'gpt 官网')   
 

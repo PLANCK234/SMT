@@ -145,3 +145,42 @@ Here is my friend: [yuan-qi5](https://github.com/yuan-qi5 'You can also be my fr
 I love deepseek **[deepseek](https://chat.deepseek.com/ 'deepseek 官网')**    
 This is the gpt [`gpt`](https://chatgpt.com/ 'gpt 官网')   
 
+**引用类型链接**
+
+使 URL 在 Markdown 中更易于显示和阅读。参考样式链接分为两部分 ： 与文本保持内联的部分以及存储在文件中其他位置的部分，以使文本易于阅读     
+
+第一部分格式 ： `[显示为链接的文本][标签 : 用于指向存储在文档其他位置的链接]` (可在两组间包含个空格，第二组括号中的标签不区分大小写)     
+[uniform resource locator][3]
+
+第二部分格式 : `[标签]: 链接的 URL (链接的可选标题)`    
+
+example :    
+[chatgpt][2]
+
+[2]:https://chatgpt.com/ 'gpt官网'    
+[3]:https://github.com/yuan-qi5/hello-world/blob/main/markdown_pratice.md '我朋友做的'
+
+note : 为兼容性，请在 URL 中空格用 %20 代替，两个部分之间一定要有空行
+
+图片
+=======
+插入图片 Markdown 语法 : `![图片alt](图片链接 "图片title")` title 可选
+
+链接图片 ： 给图片增加链接 <br>
+将图像的 Markdown 括在方括号中，然后将链接添加在圆括号中。 <br>
+`[![图片alt](图片链接 "图片title")](https://markdown.com.cn)`
+
+转义字符语法
+=======
+通过反斜杠     
+\* Without the backslash, this would be a bullet in an unordered list.
+
+特殊字符自动转义 : & <    
+&copy  <br>
+AT&T  <br>
+4 < 5
+
+内嵌 HTML 标签
+========
+
+我也不太会 HTML > _ < 祝你今天愉快！

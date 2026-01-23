@@ -55,6 +55,7 @@ intuition: can be quickly demostrated bidirectionally
 简单来讲，如果我用$R$中的tactic，能从P推出Q，Q推出P，那么就说这两种定义等价。由于证明定义很简单，用大语言模型在lean内核上多次执行，在给定时间内能互推就行，否则定义不相等。<br>
 
 > **思考** <br>
+
 | Stage | Core Idea | Method | Safety Guarantee | Outcome |
 |------|-----------|--------|------------------|---------|
 | Benchmark source | Use SMT benchmarks with known answers | QF_BV problems from SMT-COMP | Ground truth SAT/UNSAT available | Reliable training & evaluation tasks |
